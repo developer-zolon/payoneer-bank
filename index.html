@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoneer Bank</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- login area start -->
+    <div id="login-area">
+        <div class="submit-area">
+            <h2 class="text-center">Welcome To Our Payoneer Bank</h2>
+            <h4>Login</h4>
+            <input type="text" class="form-control" placeholder="Account Number">
+            <input type="password" class="form-control" placeholder="Password">
+            <button id="loginBtn" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <!-- login area end -->
+
+    <!-- transaction area start -->
+    <div id="transaction">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="deposit commonDesign">
+                        <h4>Deposit</h4>
+                        <h2>$ <span id="currentDeposit">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="withdraw commonDesign">
+                        <h4>Withdraw</h4>
+                        <h2>$ <span id="currentWithdraw"> 00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="balance commonDesign">
+                        <h4>Balance</h4>
+                        <h2>$ <span id="currentBalance"> 100 </span> </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-6">
+                    <div class="submit-area">
+                        <h4>Deposit</h4>
+                        <input type="text" id="depositInput" class="form-control" placeholder="$ Amount you want to Deposit">
+                        <button id="depositBtn" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-6">
+                    <div class="submit-area">
+                        <h4>Withdraw</h4>
+                        <input id="withdrawInput" type="text" class="form-control" placeholder="$ Amount you want to Withdraw">
+                        <button id="withdrawBtn" class="btn btn-success ">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- transaction area end -->
+    <script src="script.js"></script>
+</body>
+
+</html>
